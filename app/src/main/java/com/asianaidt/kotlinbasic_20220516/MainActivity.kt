@@ -25,10 +25,28 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnLog.setOnClickListener {
-
+//          토스트 띄우기
             Toast.makeText(this,"테스트용 토스트",Toast.LENGTH_SHORT).show()
 
         }
+
+        btnLog.setOnClickListener {
+
+            //변수 문법 테스트
+
+            var name1 : String // 변수
+            val name2 : String // 상수
+
+            // 최초 대입은 val/var 둘다 가능
+            name1 = "지혜"
+            name2 = "철수"
+
+            name1 = "졔"
+//            name2 = "영희"
+
+        }
+
+
     }
 
 
