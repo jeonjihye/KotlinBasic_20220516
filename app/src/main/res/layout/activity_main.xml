@@ -29,7 +29,33 @@
         android:id="@+id/btnCondition"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="조건문 문법 테스트용 버튼"/>
+        android:text="조건문 문 테스트용 버튼"/>
+
+    <Button
+        android:id="@+id/btnRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="반복문 문법 테스트용 버튼"/>
+
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아무말이나 입력"/>
+
+    <Button
+        android:id="@+id/btnCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위 메세지 복사"/>
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="복사한 내용이 여기에 표시됩니다."
+        android:textSize="17dp"/>
 
 
 </LinearLayout>

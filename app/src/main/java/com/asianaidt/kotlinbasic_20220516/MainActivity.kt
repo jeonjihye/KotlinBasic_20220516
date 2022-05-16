@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        btnLog.setOnLongClickListener{
+        btnToast.setOnLongClickListener{
 
             Log.d("메인화면","로그 버튼이 길게 눌림")
 
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        btnLog.setOnClickListener {
+        btnVariable.setOnClickListener {
 
             //변수 문법 테스트
 
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        btnLog.setOnClickListener {
+        btnCondition.setOnClickListener {
 
 //            1. if 문 테스트
 
@@ -68,13 +68,40 @@ class MainActivity : AppCompatActivity() {
                 10 -> {
                     Log.d("when 테스트" ,"10인 경우")
                 }
-                15->{
+                15 -> {
                     Log.d("when","15인 경우 - 코드 한줄")
                 }
                 20,30,40, -> Log.d("when","20,30,40 중 하나")
                 in 41..100 -> Log.d("when","41부터 100 사이의 값")
                 else -> Log.d("when","그 외의 모든 경우")
             }
+        }
+
+        btnRepeat.setOnClickListener {
+//            1. 정석 - arrayList 연계
+            val studentList = ArrayList<String>()
+            studentList.add("전지혜")
+            studentList.add("전관")
+            studentList.add("전형욱")
+
+            for(name in studentList){
+                Log.d("정석 for 문", name)
+            }
+
+
+//            2. 0~4 / 0~5 직전 (자바식 for 문)
+            for(i in 0..4){
+                Log.d("0~4",i.toString())
+            }
+
+            for(i in 0 until 5){
+                Log.d("0~5직전",i.toString())
+            }
+
+
+
+
+
         }
 
     }
